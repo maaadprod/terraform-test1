@@ -77,7 +77,7 @@ jobs:
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Test env vars
-      run: echo %AWS_ACCESS_KEY_ID%
+      run: printenv AWS_ACCESS_KEY_ID
       
     - name: Terraform Init
       run: terraform init
